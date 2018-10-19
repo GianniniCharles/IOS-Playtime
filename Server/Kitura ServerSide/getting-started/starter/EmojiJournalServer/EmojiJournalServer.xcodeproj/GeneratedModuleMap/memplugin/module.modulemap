@@ -1,0 +1,4 @@
+module memplugin {
+    umbrella "/Users/cruxis/Desktop/AppDevelopment/Server/Kitura ServerSide/getting-started/starter/EmojiJournalServer/.build/checkouts/omr-agentcore-2438619285064521580/src/memplugin/include"
+    export *
+}
