@@ -31,4 +31,4 @@ func calcBMI(weight: Double, heightTheFootPart: Double, heightTheInchesPart: Dou
 
 
 //calcBMI(weight: 180lbs)
-calcBMI(weight: 170, heightTheFootPart: 5, heightTheInchesPart: 10)
+calcBMI(weight: 185, heightTheFootPart: 6, heightTheInchesPart: 0)
