@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +20,63 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2dN-He-Z7i" userLabel="topView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="artBoard" translatesAutoresizingMaskIntoConstraints="NO" id="Sgw-gq-piC">
+                                        <rect key="frame" x="123.5" y="103" width="128" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="Qhb-6d-Gvt"/>
+                                            <constraint firstAttribute="height" constant="128" id="iY5-gM-mHI"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Sgw-gq-piC" firstAttribute="centerY" secondItem="2dN-He-Z7i" secondAttribute="centerY" id="X0X-Yr-uI6"/>
+                                    <constraint firstItem="Sgw-gq-piC" firstAttribute="centerX" secondItem="2dN-He-Z7i" secondAttribute="centerX" id="u59-n9-ANU"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rXg-tn-BA6" userLabel="bottomView">
+                                <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notebook" translatesAutoresizingMaskIntoConstraints="NO" id="ddz-Ez-Sw1">
+                                        <rect key="frame" x="123.5" y="103" width="128" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="UA1-JG-lGR"/>
+                                            <constraint firstAttribute="height" constant="128" id="tsb-pE-wtZ"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ddz-Ez-Sw1" firstAttribute="centerY" secondItem="rXg-tn-BA6" secondAttribute="centerY" id="7qW-Sd-Ns1"/>
+                                    <constraint firstItem="ddz-Ez-Sw1" firstAttribute="centerX" secondItem="rXg-tn-BA6" secondAttribute="centerX" id="JM6-9s-4oH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rXg-tn-BA6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6yc-D1-Fbc"/>
+                            <constraint firstItem="2dN-He-Z7i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AuL-Sj-nA1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rXg-tn-BA6" secondAttribute="bottom" id="HBq-MG-aRd"/>
+                            <constraint firstAttribute="trailing" secondItem="2dN-He-Z7i" secondAttribute="trailing" id="QPP-BE-d59"/>
+                            <constraint firstItem="rXg-tn-BA6" firstAttribute="top" secondItem="2dN-He-Z7i" secondAttribute="bottom" id="nhs-iq-iA8"/>
+                            <constraint firstAttribute="trailing" secondItem="rXg-tn-BA6" secondAttribute="trailing" id="tkV-Nd-o36"/>
+                            <constraint firstItem="rXg-tn-BA6" firstAttribute="top" secondItem="2dN-He-Z7i" secondAttribute="bottom" id="u8u-Sl-Z13"/>
+                            <constraint firstItem="rXg-tn-BA6" firstAttribute="height" secondItem="2dN-He-Z7i" secondAttribute="height" id="yqq-hk-NWE"/>
+                            <constraint firstItem="2dN-He-Z7i" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zD7-bY-edi"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="artBoard" width="415.67999267578125" height="511.67999267578125"/>
+        <image name="notebook" width="358.55999755859375" height="505.92001342773438"/>
+    </resources>
 </document>
