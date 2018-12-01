@@ -1,0 +1,262 @@
+{
+  "fileIds": null,
+  "paymentEntries": [
+      {
+          "paymentId": 678661,
+          "companyPersonId": 143388,
+          "dependentCompanyPersonId": null,
+          "groupId": null,
+          "fullName": "Emmet Lego",
+          "ownerNumber": "100013-000",
+          "pictureId": 214861,
+          "companyPersonStatus": 256000100,
+          "personStatus": 103000300,
+          "memberStatus": 148000100,
+          "transactionEntries": [
+              {
+                  "transactionId": 33873685,
+                  "amount": 50,
+                  "billCode": "MARINA DIESEL"
+              }
+          ],
+          "checkNumber": "456",
+          "amount": 50,
+          "variance": 0,
+          "note": null
+      },
+      {
+          "paymentId": 678662,
+          "companyPersonId": 143438,
+          "dependentCompanyPersonId": null,
+          "groupId": null,
+          "fullName": "Metalbeard Lego",
+          "ownerNumber": "100048-000",
+          "pictureId": 215149,
+          "companyPersonStatus": 256000100,
+          "personStatus": 103000300,
+          "memberStatus": 148000100,
+          "transactionEntries": [
+              {
+                  "transactionId": 33873686,
+                  "amount": 50,
+                  "billCode": "BANQUETS BEER"
+              }
+          ],
+          "checkNumber": "123",
+          "amount": 50,
+          "variance": 0,
+          "note": null
+      },
+      {
+          "paymentId": 678663,
+          "companyPersonId": 143446,
+          "dependentCompanyPersonId": null,
+          "groupId": null,
+          "fullName": "Santa Lego",
+          "ownerNumber": null,
+          "pictureId": 215219,
+          "companyPersonStatus": 256000100,
+          "personStatus": 103000300,
+          "memberStatus": 148000100,
+          "transactionEntries": [
+              {
+                  "transactionId": 33873687,
+                  "amount": 50,
+                  "billCode": "Adjust Dues - 1297"
+              },
+              {
+                  "transactionId": 33873688,
+                  "amount": 50,
+                  "billCode": "Disaster Relief - All Charities Tax dedu"
+              }
+          ],
+          "checkNumber": "789",
+          "amount": 100,
+          "variance": 0,
+          "note": null
+      }
+  ],
+  "accountData": [
+      {
+          "accountId": 38,
+          "accountName": "000-1100 - Member Receivables",
+          "debit": null,
+          "credit": 150,
+          "payments": [
+              {
+                  "paymentId": 678661,
+                  "transactionId": 33873685,
+                  "companyPersonId": 143388,
+                  "dependentCompanyPersonId": null,
+                  "groupId": null,
+                  "fullName": "Emmet Lego",
+                  "ownerNumber": "100013-000",
+                  "pictureId": 214861,
+                  "checkNumber": "456",
+                  "amount": 50,
+                  "billCodeId": 586,
+                  "billCodeName": "MARINA DIESEL"
+              },
+              {
+                  "paymentId": 678662,
+                  "transactionId": 33873686,
+                  "companyPersonId": 143438,
+                  "dependentCompanyPersonId": null,
+                  "groupId": null,
+                  "fullName": "Metalbeard Lego",
+                  "ownerNumber": "100048-000",
+                  "pictureId": 215149,
+                  "checkNumber": "123",
+                  "amount": 50,
+                  "billCodeId": 337,
+                  "billCodeName": "BANQUETS BEER"
+              },
+              {
+                  "paymentId": 678663,
+                  "transactionId": 33873688,
+                  "companyPersonId": 143446,
+                  "dependentCompanyPersonId": null,
+                  "groupId": null,
+                  "fullName": "Santa Lego",
+                  "ownerNumber": null,
+                  "pictureId": 215219,
+                  "checkNumber": "789",
+                  "amount": 50,
+                  "billCodeId": 1709,
+                  "billCodeName": "Disaster Relief - All Charities Tax dedu"
+              }
+          ]
+      },
+      {
+          "accountId": 5452,
+          "accountName": "046-4360 - Diesel Fuel",
+          "debit": 50,
+          "credit": null,
+          "payments": [
+              {
+                  "paymentId": 678661,
+                  "transactionId": 0,
+                  "companyPersonId": 143388,
+                  "dependentCompanyPersonId": null,
+                  "groupId": null,
+                  "fullName": "Emmet Lego",
+                  "ownerNumber": "100013-000",
+                  "pictureId": 214861,
+                  "checkNumber": "456",
+                  "amount": 50,
+                  "billCodeId": 586,
+                  "billCodeName": "MARINA DIESEL"
+              }
+          ]
+      },
+      {
+          "accountId": 4752,
+          "accountName": "030-4195 - Beer Sales",
+          "debit": 50,
+          "credit": null,
+          "payments": [
+              {
+                  "paymentId": 678662,
+                  "transactionId": 0,
+                  "companyPersonId": 143438,
+                  "dependentCompanyPersonId": null,
+                  "groupId": null,
+                  "fullName": "Metalbeard Lego",
+                  "ownerNumber": "100048-000",
+                  "pictureId": 215149,
+                  "checkNumber": "123",
+                  "amount": 50,
+                  "billCodeId": 337,
+                  "billCodeName": "BANQUETS BEER"
+              }
+          ]
+      },
+      {
+          "accountId": 40,
+          "accountName": "000-1102 - A/R Dues",
+          "debit": null,
+          "credit": 50,
+          "payments": [
+              {
+                  "paymentId": 678663,
+                  "transactionId": 33873687,
+                  "companyPersonId": 143446,
+                  "dependentCompanyPersonId": null,
+                  "groupId": null,
+                  "fullName": "Santa Lego",
+                  "ownerNumber": null,
+                  "pictureId": 215219,
+                  "checkNumber": "789",
+                  "amount": 50,
+                  "billCodeId": 1374,
+                  "billCodeName": "Adjust Dues - 1297"
+              }
+          ]
+      },
+      {
+          "accountId": 134,
+          "accountName": "000-1297 - Member Acct Clearing",
+          "debit": 50,
+          "credit": null,
+          "payments": [
+              {
+                  "paymentId": 678663,
+                  "transactionId": 0,
+                  "companyPersonId": 143446,
+                  "dependentCompanyPersonId": null,
+                  "groupId": null,
+                  "fullName": "Santa Lego",
+                  "ownerNumber": null,
+                  "pictureId": 215219,
+                  "checkNumber": "789",
+                  "amount": 50,
+                  "billCodeId": 1374,
+                  "billCodeName": "Adjust Dues - 1297"
+              }
+          ]
+      },
+      {
+          "accountId": 2965,
+          "accountName": "000-2254 - Or Community Foundation Contrbtn",
+          "debit": 50,
+          "credit": null,
+          "payments": [
+              {
+                  "paymentId": 678663,
+                  "transactionId": 0,
+                  "companyPersonId": 143446,
+                  "dependentCompanyPersonId": null,
+                  "groupId": null,
+                  "fullName": "Santa Lego",
+                  "ownerNumber": null,
+                  "pictureId": 215219,
+                  "checkNumber": "789",
+                  "amount": 50,
+                  "billCodeId": 1709,
+                  "billCodeName": "Disaster Relief - All Charities Tax dedu"
+              }
+          ]
+      }
+  ],
+  "batchId": 70814,
+  "revenueCenter": "Check Batch",
+  "number": "CK-105",
+  "description": "App Testing",
+  "subject": "Check CK-105",
+  "companyId": 1,
+  "ownerPersonId": 142723,
+  "ownerPersonPhotoId": 214025,
+  "ownerPersonFullName": "Maygan Fogle",
+  "transactionDate": 1537333200000,
+  "createdDate": 1537363862533,
+  "status": "Posted",
+  "totalTransactions": 3,
+  "totalAmount": 200,
+  "transactionCount": 0,
+  "validTransactionCount": 0,
+  "transactionTotalAmount": 0,
+  "transactionTotalAmountWithClubCard": 0,
+  "summary": [],
+  "transactions": [],
+  "chargeTransactions": []
+}
