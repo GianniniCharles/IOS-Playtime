@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAE-kL-C25">
-                                <rect key="frame" x="87.5" y="230" width="200" height="100"/>
+                                <rect key="frame" x="87.5" y="266" width="200" height="100"/>
                                 <viewLayoutGuide key="safeArea" id="4Sb-QA-71C"/>
                                 <state key="normal" image="us"/>
                                 <connections>
@@ -26,7 +26,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJG-e7-XOs">
-                                <rect key="frame" x="87.5" y="360" width="200" height="100"/>
+                                <rect key="frame" x="87.5" y="396" width="200" height="100"/>
                                 <viewLayoutGuide key="safeArea" id="dRs-4X-zva"/>
                                 <state key="normal" image="us"/>
                                 <connections>
@@ -34,21 +34,29 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sQ-2E-ykK">
-                                <rect key="frame" x="87.5" y="100" width="200" height="100"/>
+                                <rect key="frame" x="87.5" y="136" width="200" height="100"/>
                                 <viewLayoutGuide key="safeArea" id="nV4-6n-Qb6"/>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MFP-dn-85c"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8k-ez-LCJ">
+                                <rect key="frame" x="166.5" y="100" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="BJG-e7-XOs" firstAttribute="top" secondItem="UAE-kL-C25" secondAttribute="bottom" constant="30" id="Bre-9L-TpK"/>
+                            <constraint firstItem="1sQ-2E-ykK" firstAttribute="top" secondItem="x8k-ez-LCJ" secondAttribute="top" constant="36" id="F9W-Hv-PbX"/>
                             <constraint firstItem="1sQ-2E-ykK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="IkQ-l3-CxK"/>
                             <constraint firstItem="UAE-kL-C25" firstAttribute="top" secondItem="1sQ-2E-ykK" secondAttribute="bottom" constant="30" id="Xax-tb-mMe"/>
+                            <constraint firstItem="x8k-ez-LCJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="b0A-Gw-Ipm"/>
                             <constraint firstItem="BJG-e7-XOs" firstAttribute="centerX" secondItem="UAE-kL-C25" secondAttribute="centerX" id="hLB-c4-sIH"/>
-                            <constraint firstItem="1sQ-2E-ykK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="le6-Cr-gSH"/>
+                            <constraint firstItem="x8k-ez-LCJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="scj-Nr-aOg"/>
                             <constraint firstItem="UAE-kL-C25" firstAttribute="centerX" secondItem="1sQ-2E-ykK" secondAttribute="centerX" id="tFU-Tl-IUj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -58,6 +66,7 @@
                         <outlet property="button1" destination="1sQ-2E-ykK" id="bqF-Xd-mHu"/>
                         <outlet property="button2" destination="UAE-kL-C25" id="rLe-e9-Si6"/>
                         <outlet property="button3" destination="BJG-e7-XOs" id="6QF-i9-aF3"/>
+                        <outlet property="theLabel" destination="x8k-ez-LCJ" id="UFF-2G-5Fi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

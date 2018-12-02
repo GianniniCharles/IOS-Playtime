@@ -12,6 +12,10 @@ class ViewController: UIViewController {
     @IBOutlet var button1: UIButton!
     @IBOutlet var button2: UIButton!
     @IBOutlet var button3: UIButton!
+    
+    @IBOutlet var theLabel: UILabel!
+    
+    
     var countries = [String]()
     var correctAnswer = 0
     var score = 0
@@ -19,6 +23,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        theLabel.text = "Score: \(score)"
         countries += ["estonia", "france", "germany", "ireland",
                       "italy", "monaco", "nigeria", "poland", "russia", "spain",
                       "uk", "us"]
@@ -51,7 +56,7 @@ class ViewController: UIViewController {
             title = "Wrong"
             score -= 1
         }
-        
+         theLabel.text = "Score: \(score)"
         
         
         let ac = UIAlertController(title: title, message: "Your score is \(score).", preferredStyle: .alert)
