@@ -47,7 +47,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonTapped(_ sender: UIButton) {
-        var title: String
+//        var title: String
         
         if sender.tag == correctAnswer {
             title = "Correct"
@@ -58,10 +58,11 @@ class ViewController: UIViewController {
         }
          theLabel.text = "Score: \(score)"
         
+        askQuestion()
         
-        let ac = UIAlertController(title: title, message: "Your score is \(score).", preferredStyle: .alert)
-        ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
-        present(ac, animated: true)
+//        let ac = UIAlertController(title: title, message: "Your score is \(score).", preferredStyle: .alert)
+//        ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
+//        present(ac, animated: true)
         
     }
     
