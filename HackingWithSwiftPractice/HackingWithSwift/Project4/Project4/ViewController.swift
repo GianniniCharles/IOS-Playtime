@@ -12,7 +12,8 @@ import WebKit
 class ViewController: UIViewController, WKNavigationDelegate {
     var webView: WKWebView!
     var progressView: UIProgressView!
-    var websites = ["apple.com", "hackingwithswift.com"]
+    var selectedWebsite: String?
+    var websites: [String]?
     
     override func loadView() {
         webView = WKWebView()
@@ -24,11 +25,12 @@ class ViewController: UIViewController, WKNavigationDelegate {
         
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-      
-        
-        let url = URL(string: "https://" + websites[0])!
+        navigationController?.navigationBar.prefersLargeTitles = false
+
+        if let selectedWebsite = selectedWebsite {
+        let url = URL(string: "https://" + selectedWebsite)!
         webView.load(URLRequest(url: url))
-        
+        }
        
         webView.allowsBackForwardNavigationGestures = true
         
@@ -52,8 +54,11 @@ class ViewController: UIViewController, WKNavigationDelegate {
         
         webView.addObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress), options: .new, context:
             nil)
-        
-        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        webView.addObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress), options: .new, context:
+            nil)
     }
 
     override func observeValue(forKeyPath keyPath: String?, of
@@ -68,10 +73,12 @@ class ViewController: UIViewController, WKNavigationDelegate {
     @objc func openTapped() {
         let ac = UIAlertController(title: "Open page…", message:
             nil, preferredStyle: .actionSheet)
-        for website in websites {
-            ac.addAction(UIAlertAction(title: website, style: .default,
-                                       handler: openPage))
-        }
+//        for website in websites {
+//            ac.addAction(UIAlertAction(title: website, style: .default,
+//                                       handler: openPage))
+//        }
+        ac.addAction(UIAlertAction(title: selectedWebsite, style: .default,
+                                                                          handler: openPage))
         ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
         ac.popoverPresentationController?.barButtonItem =
             self.navigationItem.rightBarButtonItem
@@ -81,6 +88,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         let url = navigationAction.request.url
         
+        if let websites = websites {
         if let host = url?.host {
             for website in websites {
                 if host.contains(website){
@@ -90,6 +98,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
             }
         }
         decisionHandler(.cancel)
+        }
     }
     
     func openPage(action: UIAlertAction) {
